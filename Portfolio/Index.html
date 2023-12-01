@@ -3,62 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Elisabeth Krumm</title>
+    <link
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-  
-    <nav>
-        <a href="contact.html">contact</a>
-        <a href="aboutMe.html">aboutMe</a>
-    </nav>
-   <main>
-    <h1>Elisabeth Krumm</h1>
-    <h2>hi was geht?</h2>
-    <p>bei mir geht nichts</p>
-    <h2>Universum regelt
+    
 
-    </h2>
-    <p>Ich beende dich, ich beende dich
-        Stehst nur hinter mir
-        Wenn du hinter meinem Rücken sprichst
-        Ah, Auge um Auge und Zahn um Zahn
-        Alle Liebe verbraucht, da ist nichts mehr für dich
-        Ich steh' mit meiner Axt
-        Vor deinem Wagen und mein ganzer schöner Hass (und mein ganzer Hass)
-        Lässt mich einfach im Stich
-        Ich glaub', ich mach' mich nicht zum Hurensohn für dich
-        Erspar' dir meine Schläge, das Universum regelt das für mich
-        Ghoste in den Nebel, das Universum regelt, selbst wenn nicht
-        Mhm, ich mache mich nicht (ich mache mich nicht)
-        Ich glaub', ich mach' mich nicht zum Hurensohn
-        Vergessen und vergeben ist das Letzte, was ich will
-        Du liegst gefesselt im Mercedes, alles macht endlich einen Sinn
-        Du hast gebettelt und gebetet, ich hab gehofft, es geht vorbei
-        Steh' mit der Schaufel hier im Regen auf einem Haufen aus Blei
-        Meine Stimme, das letzte Geräusch, was du hörst
-        Hast immer gesagt, ich bin 'n bisschen gestört
-        Komm' mir nicht mehr mit „Bruder, der Cut geht zu tief
-        Ich hab' Schmerzen im Bauch“, und die hast du verdient
-        Mein Kopf sagt mir, was ich hören will
-        Mein Bauch sagt mir, was ich fühlen soll
-        Ich glaub', ich hab' nicht genügend Gift
-        Doch zum Aufgeben war ich nie der Typ, da-ah (uh)
-        Ich glaub', ich mach' mich nicht zum Hurensohn für dich
-        Erspar' dir meine Schläge, das Universum regelt das für mich (uhu-uh)
-        Ghoste in den Nebel, das Universum regelt, selbst wenn nicht (selbst wenn nicht)
-        Ich lasse los und es endet, Teflon-Ego, Sonne blendet
-        Drive off in the sunset (uhu-uh)
-        Mhm-mhm, ich mache mich nicht (ich mache mich nicht)
-        Ich glaub', ich mach' mich nicht zum Hurensohn für dich</p> 
-    <img src="help.jpg" alt="help">
-    </main>
+    <div id="title">ELISABETH KRUMM
+    </div>
+    <div id="header">
+        <header>
+            <nav>
+                <a href="contact.html">CONTACT</a>
+                <a href="aboutMe.html">ABOUTME</a>
+            </nav>
+        </header>
+    </div>
+        
     
+    <div id="item1"> 
+        <div class="swiper">
+        
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide"><img src="Material Metallic.png"></div>
+            <div class="swiper-slide"><img src="untitledschwert.png"></div>
+                        
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+        
+    <div id="item2"> 
+        <p>
+            Ich beende dich, ich beende dich
+            Stehst nur hinter mir
+            Wenn du hinter meinem Rücken sprichst
+            Ah, Auge um Auge und Zahn um Zahn
+            Alle Liebe verbraucht, da ist nichts mehr für dich
+            Ich steh' mit meiner Axt
+            Vor deinem Wagen und mein ganzer schöner Hass (und mein ganzer Hass)
+            Lässt mich einfach im Stich
+            Ich glaub', ich mach' mich nicht zum Hurensohn für dich
+            Erspar' dir meine Schläge, das Universum regelt das für mich
+            Ghoste in den Nebel, das Universum regelt, selbst wenn nicht
+            Mhm, ich mache mic
+        </p> 
+    </div>
+
+
+    <div id="item3">
+        <h1>
+            Meine Projekte
+        </h1>
+        <p>Zur Zeit arbeite ich an verschiedenen Sachen. Ich werde einen Kurzfilm drehen,
+         einen Film vertonen und eine 3D Animation machen. Projekte die ich schon abgeschlossen
+          habe sind ein kleines Game zu entwickeln und ein paar Sachen auf Blender.
+        </p>
+    </div>   
+    <div id="footer">
+        <footer>
+            <p>Elisabeth Krumm</p> <p>Matrikelnummer 275810</p>
+        </footer>
+    </div>
     
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    autoplay:{
+        delay: 4000,
+        disableOnInteraction: false,
+    },
     
-  <footer>
-    <p>Elisabeth Krumm</p> 
-    <p>Matrikelnummer 275810</p>
-</footer>
-    
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });</script>
 </body>
 </html>
